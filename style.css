@@ -92,3 +92,219 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+Instructions :
+Remplace les descriptions de projets dans la section "Portfolio".
+Mets ton fichier PDF de CV dans le même dossier que les fichiers HTML et CSS, en le nommant cv.pdf.
+Personnalise les couleurs ou sections si besoin.
+Ouvre index.html dans un navigateur pour voir le rendu.
+
+
+
+
+
+Vous avez dit :
+change le code css pour que ce soit plus original 
+ChatGPT a dit :
+ChatGPT
+Voici une version plus originale du style CSS, avec des animations, une palette de couleurs modernes, et un design plus distinct :
+
+style.css
+css
+Copier le code
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #a6c0fe, #f68084);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+header .header-content h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: slide-in 1.5s ease-in-out forwards;
+}
+
+header .header-content p {
+    margin-top: 10px;
+    font-style: italic;
+    animation: fade-in 2s ease-in-out forwards;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Sections générales */
+.section {
+    padding: 3em 2em;
+    text-align: center;
+    background: white;
+    margin: 1em 10%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.section:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.portfolio-item p {
+    color: #777;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form input, form textarea, form button {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1em 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
