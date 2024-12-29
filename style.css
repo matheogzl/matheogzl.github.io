@@ -92,20 +92,7 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-Instructions :
-Remplace les descriptions de projets dans la section "Portfolio".
-Mets ton fichier PDF de CV dans le même dossier que les fichiers HTML et CSS, en le nommant cv.pdf.
-Personnalise les couleurs ou sections si besoin.
-Ouvre index.html dans un navigateur pour voir le rendu.
-Vous avez dit :
-change le code css pour que ce soit plus original 
-ChatGPT a dit :
-ChatGPT
-Voici une version plus originale du style CSS, avec des animations, une palette de couleurs modernes, et un design plus distinct :
-style.css
-css
-Copier le code
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
