@@ -93,6 +93,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -181,29 +182,7 @@ nav ul li a:hover {
     transform: rotate(45deg);
     z-index: 0;
 }
-/* Portfolio */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.portfolio-item {
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-.portfolio-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-.portfolio-item h3 {
-    margin-bottom: 10px;
-    color: #555;
-}
-.portfolio-item p {
-    color: #777;
+
 }
 /* Formulaire de contact */
 form {
@@ -213,30 +192,7 @@ form {
     gap: 15px;
     margin-top: 20px;
 }
-form input, form textarea, form button {
-    width: 80%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    font-size: 1em;
-    transition: all 0.3s ease;
-}
-form input:focus, form textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
-}
-form button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-form button:hover {
-    background: #45a049;
-    transform: translateY(-2px);
-}
+
 /* Footer */
 footer {
     text-align: center;
